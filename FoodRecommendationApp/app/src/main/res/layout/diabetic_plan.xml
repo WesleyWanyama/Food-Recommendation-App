@@ -6,7 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width=""
-        android:layout_height=""
+        android:id="@+id/foodItem"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="food"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
