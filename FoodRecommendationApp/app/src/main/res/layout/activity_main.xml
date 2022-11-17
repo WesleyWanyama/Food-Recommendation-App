@@ -16,307 +16,71 @@
 
             <TextView
                 android:id="@+id/header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hello and Welcome to our Food recommendations app that will help you get the perfect diet to cure your disease."
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:text="Select Disease"
                 android:textAlignment="center"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textforfilling"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Please fill up the form to get your custom food recommendations as per your diseases."
-                android:textAlignment="center"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="57dp" />
-
-            <TextView
-                android:id="@+id/diabeticqn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. Are you Diabetic?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="108dp" />
-
-            <RadioGroup
-                android:id="@+id/radioGroup1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-
-                <RadioButton
-                    android:id="@+id/dbno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="134dp" />
-
-                <RadioButton
-                    android:id="@+id/dbyes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="134dp" />
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/bp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2. Are you affected with Blood Pressure?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="207dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/bpno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="233dp" />
-
-                <RadioButton
-                    android:id="@+id/bpyes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="233dp" />
-            </RadioGroup>
-            <TextView
-                android:id="@+id/thyroidqn3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3. Do you have thyroid?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="306dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/thyes3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="332dp" />
-
-                <RadioButton
-                    android:id="@+id/thno3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="332dp" />
-            </RadioGroup>
-            <TextView
-                android:id="@+id/cancerqn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4. Are you infected with Cancer?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="409dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/cryes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="435dp" />
-
-                <RadioButton
-                    android:id="@+id/crno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="435dp" />
-            </RadioGroup>
-            <TextView
-                android:id="@+id/msqn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5. Do you have metabolic syndrome?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="508dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/msyes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="534dp" />
-
-                <RadioButton
-                    android:id="@+id/msno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="534dp" />
-            </RadioGroup>
-            <TextView
-                android:id="@+id/hdqn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6. Do you have a heart disease?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="606dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/hdyes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="632dp" />
-
-                <RadioButton
-                    android:id="@+id/hdno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="632dp" />
-            </RadioGroup>
-            <TextView
-                android:id="@+id/asqn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7. Are you affected by Asthma?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="18dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="709dp" />
-            <RadioGroup
-                android:id="@+id/radioGroup6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#024CAF50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.24000001">
-                <RadioButton
-                    android:id="@+id/asyes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="78dp"
-                    tools:layout_editor_absoluteY="735dp" />
-
-                <RadioButton
-                    android:id="@+id/asno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="735dp" />
-            </RadioGroup>
             <Button
-                android:id="@+id/submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="291dp"
-                tools:layout_editor_absoluteY="801dp" />
+                android:id="@+id/btnDiabetes"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Diabetes" />
+            <Button
+                android:id="@+id/btnBP"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Blood Pressure"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnThyroid"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Thyroid"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnCancer"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Cancer"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnMetabolicSyndrome"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Metabolic Syndrome"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnHeart"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Heart Disease"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnAsthma"
+                android:layout_width="375dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="Asthma"
+                android:layout_marginTop="10dp"/>
+
+
         </LinearLayout>
     </ScrollView>
 
