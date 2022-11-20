@@ -4,18 +4,27 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.activity_diabetic.*
 
 class DiabeticActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diabetic)
 
-        val buttonDB: Button = findViewById(R.id.btnSubmit)
+        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        //Connect view page adapter to the adapter
+        viewPager.adapter = adapter
 
-        buttonDB.setOnClickListener{
-            val dbfIntent = Intent(this, DisplayDiabeticFood::class.java)
-
-            startActivity(dbfIntent)
-        }
+        TabLayoutMediator(tablayout,viewPager){tab, position->
+            when(position){
+                0->{
+                    tab.text="First"
+                }
+                1->{
+                    tab.text="Second"
+                }
+            }
+        }.attach()
     }
 }

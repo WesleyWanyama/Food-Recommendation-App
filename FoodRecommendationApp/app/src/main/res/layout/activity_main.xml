@@ -71,14 +71,7 @@
                 android:layout_marginRight="9dp"
                 android:text="Heart Disease"
                 android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btnAsthma"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Asthma"
-                android:layout_marginTop="10dp"/>
+
 
 
         </LinearLayout>
