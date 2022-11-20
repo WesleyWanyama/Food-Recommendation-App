@@ -19,10 +19,13 @@ class DiabeticActivity : AppCompatActivity() {
         TabLayoutMediator(tablayout,viewPager){tab, position->
             when(position){
                 0->{
-                    tab.text="First"
+                    tab.text="Protein"
                 }
                 1->{
-                    tab.text="Second"
+                    tab.text="Carbohydrates"
+                }
+                2->{
+                    tab.text="Vitamins"
                 }
             }
         }.attach()
