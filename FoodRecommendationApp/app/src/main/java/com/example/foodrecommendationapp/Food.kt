@@ -1,3 +1,8 @@
 package com.example.foodrecommendationapp
 
-data class Food(val image: Int, val text: String)
+import androidx.annotation.DrawableRes
+
+data class Food(
+    @DrawableRes val image: Int,
+    val text: String
+    )
