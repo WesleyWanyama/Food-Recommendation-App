@@ -28,15 +28,12 @@ class HtVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.htVitaminRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
-            Food(R.drawable.fish, "Fish"),
-            Food(R.drawable.egg_york, "Egg York"),
-            Food(R.drawable.red_meat, "Red Meat"),
-            Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+        val vitamins = mutableListOf(Food(R.drawable.apple, "Apples"),
+            Food(R.drawable.pear, "Pears"),
+            Food(R.drawable.carrot, "Carrot"),
+            Food(R.drawable.vegetable_salad, "Vegetable Salad"))
 
-        var foodAdapter = FoodAdapter(vitamins)
+        var foodAdapter = HtFoodAdapter(vitamins)
 
         recyclerview.adapter = foodAdapter
 

@@ -28,15 +28,18 @@ class CaCarbohydrate : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.caCarbohydrateRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
-            Food(R.drawable.fish, "Fish"),
-            Food(R.drawable.egg_york, "Egg York"),
-            Food(R.drawable.red_meat, "Red Meat"),
-            Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+        val carbohydrates = mutableListOf(Food(R.drawable.oatmeal, "Oatmeal"),
+            Food(R.drawable.pancakes, "Pancakes"),
+            Food(R.drawable.muffins, "Muffins"),
+            Food(R.drawable.black_beans, "Black Beans"),
+            Food(R.drawable.corn_salad, "Corn Salad"),
+            Food(R.drawable.brown_rice, "Brown Rice"),
+            Food(R.drawable.brown_bread, "Brown Whole Grain Bread"),
+            Food(R.drawable.whole_grain_bagels, "Whole Grain Bagels"),
+            Food(R.drawable.sweet_potato_wedges, "Sweet Potato Wedges"),
+            Food(R.drawable.tofu_fried_rice, "Tofu Fried Rice"))
 
-        var foodAdapter = FoodAdapter(carbohydrates)
+        var foodAdapter = CaFoodAdapter(carbohydrates)
 
         recyclerview.adapter = foodAdapter
 

@@ -28,15 +28,22 @@ class BpVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.bpVitaminRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
-            Food(R.drawable.fish, "Fish"),
-            Food(R.drawable.egg_york, "Egg York"),
-            Food(R.drawable.red_meat, "Red Meat"),
-            Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+        val vitamins = mutableListOf(Food(R.drawable.spinach, "Spinach"),
+            Food(R.drawable.broccoli, "Broccoli"),
+            Food(R.drawable.lettuce, "Lettuce"),
+            Food(R.drawable.kale, "Kale"),
+            Food(R.drawable.zucchini, "Zucchini"),
+            Food(R.drawable.brussels_sprouts, "Brussel Sprouts"),
+            Food(R.drawable.orange_juice, "Orange Juice"),
+            Food(R.drawable.blue_berries, "Blueberries"),
+            Food(R.drawable.apple, "Apples"),
+            Food(R.drawable.pawpaw, "Pawpaw"),
+            Food(R.drawable.watermelon, "Watermelon"),
+            Food(R.drawable.sweet_melon, "Sweet Melon"),
+            Food(R.drawable.kiwi, "Kiwi"),
+            Food(R.drawable.banana, "Bananas"))
 
-        var foodAdapter = FoodAdapter(vitamins)
+        var foodAdapter = BpFoodAdapter(vitamins)
 
         recyclerview.adapter = foodAdapter
 

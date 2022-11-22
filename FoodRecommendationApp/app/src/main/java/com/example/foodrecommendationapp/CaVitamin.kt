@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class CaVitamin : Fragment() {
+class  CaVitamin : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,15 +28,23 @@ class CaVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.caVitaminRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
-            Food(R.drawable.fish, "Fish"),
-            Food(R.drawable.egg_york, "Egg York"),
-            Food(R.drawable.red_meat, "Red Meat"),
-            Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+        val vitamins = mutableListOf(Food(R.drawable.broccoli, "Broccoli"),
+            Food(R.drawable.cauliflower, "Cauliflower"),
+            Food(R.drawable.cabbage, "Cabbage"),
+            Food(R.drawable.kale, "Kale"),
+            Food(R.drawable.brussels_sprouts, "Brussel Sprouts"),
+            Food(R.drawable.vegetable_frittata, "Vegetable Frittata"),
+            Food(R.drawable.mushroom_soup, "Mushroom Soup"),
+            Food(R.drawable.carrot_soup, "Carrot Soup"),
+            Food(R.drawable.roasted_asparagus_salad, "Roasted Asparagus Salad"),
+            Food(R.drawable.vegetable_soup, "Vegetable Soup"),
+            Food(R.drawable.berries, "Berries"),
+            Food(R.drawable.orange, "Oranges"),
+            Food(R.drawable.apple, "Apples"),
+            Food(R.drawable.pear, "Pears"),
+            Food(R.drawable.pumpkin_soup, "Pumpkin Soup"))
 
-        var foodAdapter = FoodAdapter(vitamins)
+        var foodAdapter = CaFoodAdapter(vitamins)
 
         recyclerview.adapter = foodAdapter
 

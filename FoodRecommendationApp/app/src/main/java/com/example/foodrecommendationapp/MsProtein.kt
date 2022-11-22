@@ -28,15 +28,16 @@ class MsProtein : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.msProteinRecycler)
 
-        val protein = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
-            Food(R.drawable.fish, "Fish"),
-            Food(R.drawable.egg_york, "Egg York"),
-            Food(R.drawable.red_meat, "Red Meat"),
-            Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+        val protein = mutableListOf(Food(R.drawable.boiled_eggs, "Bolied Eggs"),
+            Food(R.drawable.low_fat_milk, "Low-fat Milk"),
+            Food(R.drawable.baked_salmon, "Salmon"),
+            Food(R.drawable.sardines, "Sardines"),
+            Food(R.drawable.tuna, "Tuna"),
+            Food(R.drawable.skinless_chicken, "Skinless Chicken"),
+            Food(R.drawable.bone_soup, "Bone Soup"),
+            Food(R.drawable.greek_yoghurt, "Greek Yoghurt"))
 
-        var foodAdapter = FoodAdapter(protein)
+        var foodAdapter = MsFoodAdapter(protein)
 
         recyclerview.adapter = foodAdapter
 
