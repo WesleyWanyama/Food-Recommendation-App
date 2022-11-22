@@ -28,8 +28,8 @@ class DbCarbohydrate : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.dbCarbohydrateRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.turkey, "Turkey"),
-            Food(R.drawable.chicken, "Chicken"),
+        val carbohydrates = mutableListOf(Food(R.drawable.beans, "Beans"),
+            Food(R.drawable.peas, "Peas"),
             Food(R.drawable.fish, "Fish"),
             Food(R.drawable.egg_york, "Egg York"),
             Food(R.drawable.red_meat, "Red Meat"),
