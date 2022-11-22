@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class DbCarbohydrate : Fragment() {
+class BpProtein : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,14 +21,14 @@ class DbCarbohydrate : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_db_carbohydrate, container, false)
+        return inflater.inflate(R.layout.fragment_bp_protein, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        val recyclerview: RecyclerView = view.findViewById(R.id.dbCarbohydrateRecycler)
+        val recyclerview: RecyclerView = view.findViewById(R.id.bpProteinRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.turkey, "Turkey"),
+        val proteins = mutableListOf(Food(R.drawable.turkey, "Turkey"),
             Food(R.drawable.chicken, "Chicken"),
             Food(R.drawable.fish, "Fish"),
             Food(R.drawable.egg_york, "Egg York"),
@@ -36,7 +36,7 @@ class DbCarbohydrate : Fragment() {
             Food(R.drawable.cheese, "Cheese"),
             Food(R.drawable.baked_salmon, "Baked Salmon"))
 
-        var foodAdapter = FoodAdapter(carbohydrates)
+        var foodAdapter = FoodAdapter(proteins)
 
         recyclerview.adapter = foodAdapter
 

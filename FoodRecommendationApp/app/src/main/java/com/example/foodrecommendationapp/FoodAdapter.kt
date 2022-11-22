@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FoodAdapter(val mList: List<Food>):RecyclerView.Adapter<FoodAdapter.FoodViewHolder>(){
+class FoodAdapter( val mList: List<Food>):RecyclerView.Adapter<FoodAdapter.FoodViewHolder>(){
     //inner class creates the views to be populated with data received from the adapter class
     inner class FoodViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     /*inner class ViewHolder {

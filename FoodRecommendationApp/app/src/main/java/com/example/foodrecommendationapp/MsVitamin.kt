@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class DbVitamin : Fragment() {
+class MsVitamin : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,26 +21,20 @@ class DbVitamin : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_db_vitamin, container, false)
+        return inflater.inflate(R.layout.fragment_ms_vitamin, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        val recyclerview: RecyclerView = view.findViewById(R.id.dbVitaminRecycler)
+        val recyclerview: RecyclerView = view.findViewById(R.id.msVitaminRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.pear, "Pears"),
-            Food(R.drawable.berries, "Berries"),
-            Food(R.drawable.peach   , "Peaches"),
-            Food(R.drawable.apple, "Apples"),
-            Food(R.drawable.spinach, "Spinach"),
-            Food(R.drawable.carrot, "Carrots"),
-            Food(R.drawable.red_cabbage, "Red Cabbages"),
-            Food(R.drawable.vegetable_soup, "Vegetable Soup"),
-            Food(R.drawable.kiwi, "Kiwi"),
-            Food(R.drawable.guava, "Guavas"),
-            Food(R.drawable.banana, "Bananas"),
-            Food(R.drawable.bell_peppers, "Bell Peppers"),
-            Food(R.drawable.tomatoes, "Tomatoes"))
+        val vitamins = mutableListOf(Food(R.drawable.turkey, "Turkey"),
+            Food(R.drawable.chicken, "Chicken"),
+            Food(R.drawable.fish, "Fish"),
+            Food(R.drawable.egg_york, "Egg York"),
+            Food(R.drawable.red_meat, "Red Meat"),
+            Food(R.drawable.cheese, "Cheese"),
+            Food(R.drawable.baked_salmon, "Baked Salmon"))
 
         var foodAdapter = FoodAdapter(vitamins)
 
