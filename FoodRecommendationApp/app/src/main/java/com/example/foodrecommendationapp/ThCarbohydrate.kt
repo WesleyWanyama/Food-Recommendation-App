@@ -28,12 +28,12 @@ class ThCarbohydrate : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.thCarbohydrateRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.oatmeal, "Oatmeal"),
-            Food(R.drawable.sweet_potatoes, "Sweet Potatoes"),
-            Food(R.drawable.whole_grain_bread, "Whole Grain Bread"),
-            Food(R.drawable.whole_grain_rice, "Whole Grain Rice"),
-            Food(R.drawable.beans, "Beans"),
-            Food(R.drawable.peas, "Peas"))
+        val carbohydrates = mutableListOf(ThFood(R.drawable.oatmeal, "Oatmeal"),
+            ThFood(R.drawable.sweet_potatoes, "Sweet Potatoes"),
+            ThFood(R.drawable.whole_grain_bread, "Whole Grain Bread"),
+            ThFood(R.drawable.whole_grain_rice, "Whole Grain Rice"),
+            ThFood(R.drawable.beans, "Beans"),
+            ThFood(R.drawable.peas, "Peas"))
 
         var foodAdapter = ThFoodAdapter(carbohydrates)
 

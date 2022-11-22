@@ -28,11 +28,11 @@ class ThProtein : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.thProteinRecycler)
 
-        val proteins = mutableListOf(Food(R.drawable.baked_fish, "Baked Fish"),
-            Food(R.drawable.lean_meat, "Lean Meat"),
-            Food(R.drawable.eggs, "Eggs"),
-            Food(R.drawable.milk, "Milk"),
-            Food(R.drawable.natural_yoghurt, "Natural Yoghurt"))
+        val proteins = mutableListOf(ThFood(R.drawable.baked_fish, "Baked Fish"),
+            ThFood(R.drawable.lean_meat, "Lean Meat"),
+            ThFood(R.drawable.eggs, "Eggs"),
+            ThFood(R.drawable.milk, "Milk"),
+            ThFood(R.drawable.natural_yoghurt, "Natural Yoghurt"))
 
         var foodAdapter = ThFoodAdapter(proteins)
 

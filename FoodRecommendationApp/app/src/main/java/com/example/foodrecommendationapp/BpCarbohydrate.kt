@@ -28,13 +28,13 @@ class BpCarbohydrate : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.bpCarbohydrateRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.oatmeal, "Oatmeal"),
-            Food(R.drawable.lentils, "Lentils"),
-            Food(R.drawable.baked_potatoes, "Baked Potatoes"),
-            Food(R.drawable.corn, "Corn"),
-            Food(R.drawable.dates, "Dates"),
-            Food(R.drawable.walnuts, "Walnut"),
-            Food(R.drawable.whole_grain_rice, "Whole Grain Rice"))
+        val carbohydrates = mutableListOf(BpFood(R.drawable.oatmeal, "Oatmeal"),
+            BpFood(R.drawable.lentils, "Lentils"),
+            BpFood(R.drawable.baked_potatoes, "Baked Potatoes"),
+            BpFood(R.drawable.corn, "Corn"),
+            BpFood(R.drawable.dates, "Dates"),
+            BpFood(R.drawable.walnuts, "Walnut"),
+            BpFood(R.drawable.whole_grain_rice, "Whole Grain Rice"))
 
         var foodAdapter = BpFoodAdapter(carbohydrates)
 

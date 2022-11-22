@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MsFoodAdapter( val mList: List<Food>): RecyclerView.Adapter<MsFoodAdapter.FoodViewHolder>() {
+class MsFoodAdapter( val mList: List<MsFood>): RecyclerView.Adapter<MsFoodAdapter.FoodViewHolder>() {
     //inner class creates the views to be populated with data received from the adapter class
     inner class FoodViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
 
@@ -29,11 +29,11 @@ class MsFoodAdapter( val mList: List<Food>): RecyclerView.Adapter<MsFoodAdapter.
         var foodImage: ImageView = holder.itemView.findViewById(R.id.foodImage)
         var foodText: TextView = holder.itemView.findViewById(R.id.foodText)
 
-        val Food = mList[position]
+        val MsFood = mList[position]
 
-        foodImage.setImageResource(Food.image)
+        foodImage.setImageResource(MsFood.image)
 
-        foodText.text = Food.text
+        foodText.text = MsFood.text
     }
 
     override fun getItemCount(): Int {

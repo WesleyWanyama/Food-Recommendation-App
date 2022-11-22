@@ -28,20 +28,20 @@ class ThVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.thVitaminRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.citrus_fruits, "Citrus Fruits"),
-            Food(R.drawable.plums, "Plums"),
-            Food(R.drawable.pear, "Pears"),
-            Food(R.drawable.apple, "Apples"),
-            Food(R.drawable.pineapples, "Pineapples"),
-            Food(R.drawable.pawpaw, "Pawpaw"),
-            Food(R.drawable.lemon, "Lemons"),
-            Food(R.drawable.pawpaw, "Pawpaw"),
-            Food(R.drawable.guava, "Guava"),
-            Food(R.drawable.carrot, "Carrots"),
-            Food(R.drawable.cauliflower, "Cauliflower"),
-            Food(R.drawable.radishes, "Radishes"),
-            Food(R.drawable.brussels_sprouts, "Brussels"),
-            Food(R.drawable.bell_peppers, "Bell Peppers"))
+        val vitamins = mutableListOf(ThFood(R.drawable.citrus_fruits, "Citrus Fruits"),
+            ThFood(R.drawable.plums, "Plums"),
+            ThFood(R.drawable.pear, "Pears"),
+            ThFood(R.drawable.apple, "Apples"),
+            ThFood(R.drawable.pineapples, "Pineapples"),
+            ThFood(R.drawable.pawpaw, "Pawpaw"),
+            ThFood(R.drawable.lemon, "Lemons"),
+            ThFood(R.drawable.pawpaw, "Pawpaw"),
+            ThFood(R.drawable.guava, "Guava"),
+            ThFood(R.drawable.carrot, "Carrots"),
+            ThFood(R.drawable.cauliflower, "Cauliflower"),
+            ThFood(R.drawable.radishes, "Radishes"),
+            ThFood(R.drawable.brussels_sprouts, "Brussels"),
+            ThFood(R.drawable.bell_peppers, "Bell Peppers"))
 
         var foodAdapter = ThFoodAdapter(vitamins)
 
