@@ -10,7 +10,7 @@ class CancerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cancer)
 
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter = CaViewPagerAdapter(supportFragmentManager,lifecycle)
         //Connect view page adapter to the adapter
         viewPager.adapter = adapter
 

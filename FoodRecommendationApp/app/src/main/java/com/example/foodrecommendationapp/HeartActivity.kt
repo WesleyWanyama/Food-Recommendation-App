@@ -10,7 +10,7 @@ class HeartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_heart)
 
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter = HtViewPagerAdapter(supportFragmentManager,lifecycle)
         //Connect view page adapter to the adapter
         viewPager.adapter = adapter
 

@@ -12,7 +12,7 @@ class BpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bp)
 
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter = BpViewPagerAdapter(supportFragmentManager,lifecycle)
         //Connect view page adapter to the adapter
         viewPager.adapter = adapter
 

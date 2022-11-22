@@ -10,7 +10,7 @@ class MsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ms)
 
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter = MsViewPagerAdapter(supportFragmentManager,lifecycle)
         //Connect view page adapter to the adapter
         viewPager.adapter = adapter
 
