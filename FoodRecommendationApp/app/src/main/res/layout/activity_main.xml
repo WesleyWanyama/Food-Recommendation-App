@@ -13,65 +13,142 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <TextView
-                android:id="@+id/header"
+                android:id="@+id/title"
                 android:layout_width="match_parent"
-                android:layout_height="63dp"
-                android:text="Select Disease"
+                android:layout_height="wrap_content"
+                android:text="Select Diseases"
                 android:textAlignment="center"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/dbText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Are you Diabetic?"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/dbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/dbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/bpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Are you affected with Blood Pressure?"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/bpYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/bpNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/thText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Do you have Thyroid?"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/thYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/thNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/radio_group4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/caText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Do you have Cancer?"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/caYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/caNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/radio_group5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/msText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Do you have metabolic syndrome?"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/msYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/msNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
 
             <Button
-                android:id="@+id/btnDiabetes"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:layout_marginTop="10dp"
-                android:text="Diabetes" />
-            <Button
-                android:id="@+id/btnBP"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Blood Pressure"
-                android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btnThyroid"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Thyroid"
-                android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btnCancer"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Cancer"
-                android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btnMetabolicSyndrome"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Metabolic Syndrome"
-                android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btnHeart"
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="9dp"
-                android:text="Heart Disease"
-                android:layout_marginTop="10dp"/>
-
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:text="Submit"
+                android:layout_height="wrap_content"/>
 
 
         </LinearLayout>

@@ -28,21 +28,21 @@ class MsVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.msVitaminRecycler)
 
-        val vitamins = mutableListOf(MsFood(R.drawable.raspberries, "Raspberries"),
-            MsFood(R.drawable.blackberries, "Blackberries"),
-            MsFood(R.drawable.pear, "Pears"),
-            MsFood(R.drawable.chili_pepper, "Chili Pepper"),
-            MsFood(R.drawable.kale, "Kale"),
-            MsFood(R.drawable.spinach, "Spinach"),
-            MsFood(R.drawable.vegetable_soup, "Vegetable Soup"),
-            MsFood(R.drawable.mushroom_soup, "Mushroom Soup"),
-            MsFood(R.drawable.vegetable_salad, "Vegetable Salad"),
-            MsFood(R.drawable.apple, "Apples"),
-            MsFood(R.drawable.kiwi, "Kiwi"),
-            MsFood(R.drawable.zucchini, "Zucchini"),
-            MsFood(R.drawable.carrot, "Carrots"))
+        val vitamins = mutableListOf(Food(R.drawable.raspberries, "Raspberries"),
+            Food(R.drawable.blackberries, "Blackberries"),
+            Food(R.drawable.pear, "Pears"),
+            Food(R.drawable.chili_pepper, "Chili Pepper"),
+            Food(R.drawable.kale, "Kale"),
+            Food(R.drawable.spinach, "Spinach"),
+            Food(R.drawable.vegetable_soup, "Vegetable Soup"),
+            Food(R.drawable.mushroom_soup, "Mushroom Soup"),
+            Food(R.drawable.vegetable_salad, "Vegetable Salad"),
+            Food(R.drawable.apple, "Apples"),
+            Food(R.drawable.kiwi, "Kiwi"),
+            Food(R.drawable.zucchini, "Zucchini"),
+            Food(R.drawable.carrot, "Carrots"))
 
-        var foodAdapter = MsFoodAdapter(vitamins)
+        var foodAdapter = FoodAdapter(vitamins)
 
         recyclerview.adapter = foodAdapter
 

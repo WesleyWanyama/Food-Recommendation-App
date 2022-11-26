@@ -28,22 +28,22 @@ class BpVitamin : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.bpVitaminRecycler)
 
-        val vitamins = mutableListOf(BpFood(R.drawable.spinach, "Spinach"),
-            BpFood(R.drawable.broccoli, "Broccoli"),
-            BpFood(R.drawable.lettuce, "Lettuce"),
-            BpFood(R.drawable.kale, "Kale"),
-            BpFood(R.drawable.zucchini, "Zucchini"),
-            BpFood(R.drawable.brussels_sprouts, "Brussel Sprouts"),
-            BpFood(R.drawable.orange_juice, "Orange Juice"),
-            BpFood(R.drawable.blue_berries, "Blueberries"),
-            BpFood(R.drawable.apple, "Apples"),
-            BpFood(R.drawable.pawpaw, "Pawpaw"),
-            BpFood(R.drawable.watermelon, "Watermelon"),
-            BpFood(R.drawable.sweet_melon, "Sweet Melon"),
-            BpFood(R.drawable.kiwi, "Kiwi"),
-            BpFood(R.drawable.banana, "Bananas"))
+        val vitamins = mutableListOf(Food(R.drawable.spinach, "Spinach"),
+            Food(R.drawable.broccoli, "Broccoli"),
+            Food(R.drawable.lettuce, "Lettuce"),
+            Food(R.drawable.kale, "Kale"),
+            Food(R.drawable.zucchini, "Zucchini"),
+            Food(R.drawable.brussels_sprouts, "Brussel Sprouts"),
+            Food(R.drawable.orange_juice, "Orange Juice"),
+            Food(R.drawable.blue_berries, "Blueberries"),
+            Food(R.drawable.apple, "Apples"),
+            Food(R.drawable.pawpaw, "Pawpaw"),
+            Food(R.drawable.watermelon, "Watermelon"),
+            Food(R.drawable.sweet_melon, "Sweet Melon"),
+            Food(R.drawable.kiwi, "Kiwi"),
+            Food(R.drawable.banana, "Bananas"))
 
-        var foodAdapter = BpFoodAdapter(vitamins)
+        var foodAdapter = FoodAdapter(vitamins)
 
         recyclerview.adapter = foodAdapter
 

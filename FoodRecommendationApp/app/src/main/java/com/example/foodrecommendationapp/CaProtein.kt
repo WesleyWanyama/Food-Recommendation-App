@@ -28,12 +28,12 @@ class CaProtein : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.caProteinRecycler)
 
-        val protein = mutableListOf(CaFood(R.drawable.shrimp, "Shrimpe"),
-            CaFood(R.drawable.chicken_salad, "Chicken Salad"),
-            CaFood(R.drawable.baked_salmon, "Baked Salmon"),
-            CaFood(R.drawable.eggs, "Eggs"))
+        val protein = mutableListOf(Food(R.drawable.shrimp, "Shrimpe"),
+            Food(R.drawable.chicken_salad, "Chicken Salad"),
+            Food(R.drawable.baked_salmon, "Baked Salmon"),
+            Food(R.drawable.eggs, "Eggs"))
 
-        var foodAdapter = CaFoodAdapter(protein)
+        var foodAdapter = FoodAdapter(protein)
 
         recyclerview.adapter = foodAdapter
 

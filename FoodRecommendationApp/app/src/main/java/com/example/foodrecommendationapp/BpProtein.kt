@@ -28,12 +28,12 @@ class BpProtein : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.bpProteinRecycler)
 
-        val proteins = mutableListOf(BpFood(R.drawable.baked_salmon, "Salmon"),
-            BpFood(R.drawable.skinless_chicken, "Skinless Chicken"),
-            BpFood(R.drawable.lean_meat, "Lean Meat"),
-            BpFood(R.drawable.natural_yoghurt, "Natural Yoghurt"))
+        val proteins = mutableListOf(Food(R.drawable.baked_salmon, "Salmon"),
+            Food(R.drawable.skinless_chicken, "Skinless Chicken"),
+            Food(R.drawable.lean_meat, "Lean Meat"),
+            Food(R.drawable.natural_yoghurt, "Natural Yoghurt"))
 
-        var foodAdapter = BpFoodAdapter(proteins)
+        var foodAdapter = FoodAdapter(proteins)
 
         recyclerview.adapter = foodAdapter
 
