@@ -28,11 +28,13 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(dbIntent)
         }
+
         buttonBP.setOnClickListener{
             val bpIntent = Intent(this, BpActivity::class.java)
 
             startActivity(bpIntent)
         }
+
         buttonTh.setOnClickListener{
             val thIntent = Intent(this, ThyroidActivity::class.java)
 
