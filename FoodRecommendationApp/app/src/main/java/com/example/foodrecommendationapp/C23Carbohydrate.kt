@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class C7Vitamin : Fragment() {
+class C23Carbohydrate : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,25 +21,22 @@ class C7Vitamin : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_c7_vitamin, container, false)
+        return inflater.inflate(R.layout.fragment_c23_carbohydrate, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        val recyclerview: RecyclerView = view.findViewById(R.id.C7VitaminRecycler)
+        val recyclerview: RecyclerView = view.findViewById(R.id.c23CarbohydrateRecycler)
 
-        val vitamins = mutableListOf(Food(R.drawable.bell_peppers, "Bell Peppers"),
-            Food(R.drawable.plums, "Plums"),
-            Food(R.drawable.pawpaw, "Pawpaw"),
-            Food(R.drawable.apple, "Apples"),
-            Food(R.drawable.spinach, "Spinach"),
-            Food(R.drawable.carrot, "Carrots"),
+        val carbohydrates = mutableListOf(Food(R.drawable.baked_potatoes, "Baked Potatoes"),
+            Food(R.drawable.barley, "Barley"),
+            Food(R.drawable.oatmeal, "Oatmeal"),
+            Food(R.drawable.whole_grain_rice, "Whole Grain Rice"),
+            Food(R.drawable.lentils, "Lentils"),
 
-            Food(R.drawable.cauliflower, "Cauliflower"),
-            Food(R.drawable.radishes, "Radishes"),
-            Food(R.drawable.brussels_sprouts, "Brussels"))
+            Food(R.drawable.tofu, "Tofu"))
 
-        var foodAdapter = FoodAdapter(vitamins)
+        var foodAdapter = FoodAdapter(carbohydrates)
 
         recyclerview.adapter = foodAdapter
 

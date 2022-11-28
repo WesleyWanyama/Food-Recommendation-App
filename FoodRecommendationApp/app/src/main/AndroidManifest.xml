@@ -13,6 +13,43 @@
         android:theme="@style/Theme.FoodRecommendationApp"
         tools:targetApi="31">
         <activity
+            android:name=".CombinationTwentyfive"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CombinationTwentyfour"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CombinationTwentythree"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CombinationTwentytwo"
+            android:exported="false"
+            android:label="@string/title_activity_combination_twentytwo"
+            android:theme="@style/Theme.FoodRecommendationApp.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CombinationTwentyone"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CombinationThirteen"
             android:exported="false">
             <meta-data
