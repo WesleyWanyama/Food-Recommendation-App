@@ -13,34 +13,51 @@
         android:theme="@style/Theme.FoodRecommendationApp"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".CombinationFifteen"
+=======
+            android:name=".CombinationThirty"
+>>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< Updated upstream
             android:name=".CombinationFourteen"
+=======
+            android:name=".CombinationTwentyNine"
+>>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< Updated upstream
             android:name=".CombinationTwenty"
+=======
+            android:name=".CombinationTwentyEight"
+>>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< Updated upstream
             android:name=".CombinationNineteen"
+=======
+            android:name=".CombinationTwentySeven"
+>>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< Updated upstream
             android:name=".CombinationEighteen"
             android:exported="false">
             <meta-data
@@ -49,6 +66,9 @@
         </activity>
         <activity
             android:name=".CombinationSixteen"
+=======
+            android:name=".CombinationTwentySix"
+>>>>>>> Stashed changes
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThProtein">
+    tools:context=".C30Vitamin">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/thProteinRecycler"
+        android:id="@+id/c30VitaminRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="5"
