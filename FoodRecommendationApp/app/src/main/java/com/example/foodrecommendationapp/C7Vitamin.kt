@@ -34,7 +34,7 @@ class C7Vitamin : Fragment() {
             Food(R.drawable.apple, "Apples"),
             Food(R.drawable.spinach, "Spinach"),
             Food(R.drawable.carrot, "Carrots"),
-
+            Food(R.drawable.carrot, "Carrots"),
             Food(R.drawable.cauliflower, "Cauliflower"),
             Food(R.drawable.radishes, "Radishes"),
             Food(R.drawable.brussels_sprouts, "Brussels"))

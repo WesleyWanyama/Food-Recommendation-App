@@ -32,7 +32,7 @@ class C13Protein : Fragment() {
             Food(R.drawable.turkey, "Turkey"),
             Food(R.drawable.fish, "Fish"),
             Food(R.drawable.cheese, "Cheese"),
-            Food(R.drawable.baked_salmon, "Baked Salmon"))
+            Food(R.drawable.skinless_chicken, "Skinless Chicken"))
 
         var foodAdapter = FoodAdapter(proteins)
 
