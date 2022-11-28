@@ -2,12 +2,9 @@ package com.example.foodrecommendationapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
 import android.content.Context
 import android.content.Intent
-import android.widget.RadioButton
+import android.widget.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -149,6 +146,8 @@ class MainActivity : AppCompatActivity() {
             }else if(dbYes.isChecked && bpYes.isChecked && thYes.isChecked && caYes.isChecked && msYes.isChecked){
                 //combination 30
                 startActivity(c30Intent)
+            }else if(dbNo.isChecked && bpNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
+                Toast.makeText(applicationContext, "OOPS!! NO RECOMMENDATIONS FOR YOU", Toast.LENGTH_LONG).show()
             }
         }
 
