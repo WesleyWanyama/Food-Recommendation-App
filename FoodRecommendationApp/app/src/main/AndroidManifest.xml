@@ -27,14 +27,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CombinatioTwenty"
+            android:name=".CombinationTwenty"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CombinatioNineteen"
+            android:name=".CombinationNineteen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -105,13 +105,6 @@
         </activity>
         <activity
             android:name=".CombinationSix"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".HeartActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
