@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         var thIntent = Intent(this, ThyroidActivity::class.java)
         var caIntent = Intent(this, CancerActivity::class.java)
         var msIntent = Intent(this, MsActivity::class.java)
+        var c6Intent
 
         //On clicking submit button
         submit.setOnClickListener {
