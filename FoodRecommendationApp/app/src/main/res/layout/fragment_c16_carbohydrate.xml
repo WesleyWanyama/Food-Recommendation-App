@@ -6,7 +6,7 @@
     tools:context=".C16Carbohydrate">
 
     <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/c16CarbohydrateRecycle"
+    android:id="@+id/c16CarbohydrateRecycler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:itemCount="5"
