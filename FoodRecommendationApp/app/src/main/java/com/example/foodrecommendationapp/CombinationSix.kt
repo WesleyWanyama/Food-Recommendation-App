@@ -1,7 +1,7 @@
 package com.example.foodrecommendationapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_diabetic.*
 
@@ -10,7 +10,7 @@ class CombinationSix : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_combination_six)
 
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter = C6ViewPagerAdapter(supportFragmentManager,lifecycle)
         //Connect view page adapter to the adapter
         viewPager.adapter = adapter
 

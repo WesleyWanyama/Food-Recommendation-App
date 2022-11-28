@@ -1,13 +1,10 @@
 package com.example.foodrecommendationapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.content.Context
-import android.content.Intent
 import android.widget.RadioButton
+import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
