@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".C16Carbohydrate">
+    tools:context=".C14Carbohydrate">
 
     <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/c16CarbohydrateRecycler"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:itemCount="5"
-    tools:listitem="@layout/food_items"/>
-
-
+        android:id="@+id/c14CarbohydrateRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/food_items"/>
 
 </RelativeLayout>

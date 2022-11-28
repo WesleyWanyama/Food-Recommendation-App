@@ -13,6 +13,20 @@
         android:theme="@style/Theme.FoodRecommendationApp"
         tools:targetApi="31">
         <activity
+            android:name=".CombinationFifteen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CombinationFourteen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CombinatioTwenty"
             android:exported="false">
             <meta-data

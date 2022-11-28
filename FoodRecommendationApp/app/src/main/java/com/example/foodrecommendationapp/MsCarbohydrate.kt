@@ -28,15 +28,13 @@ class MsCarbohydrate : Fragment() {
 
         val recyclerview: RecyclerView = view.findViewById(R.id.msCarbohydrateRecycler)
 
-        val carbohydrates = mutableListOf(Food(R.drawable.whole_grain_bread, "Whole Grain Bread"),
+        val carbohydrates = mutableListOf(Food(R.drawable.baked_potatoes, "Baked Potatoes"),
             Food(R.drawable.barley, "Barley"),
             Food(R.drawable.oatmeal, "Oatmeal"),
             Food(R.drawable.whole_grain_rice, "Whole Grain Rice"),
             Food(R.drawable.lentils, "Lentils"),
             Food(R.drawable.beans, "Beans"),
             Food(R.drawable.flax_seeds, "Flaxseeds"),
-            Food(R.drawable.tofu, "Tofu"),
-            Food(R.drawable.baked_potatoes, "Baked Potatoes"),
             Food(R.drawable.arrow_roots, "Arrow Roots"))
 
         var foodAdapter = FoodAdapter(carbohydrates)
