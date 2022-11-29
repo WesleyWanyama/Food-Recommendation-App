@@ -148,8 +148,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(c30Intent)
             }else if(dbNo.isChecked && bpNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
                 Toast.makeText(applicationContext, "OOPS!! NO RECOMMENDATIONS FOR YOU", Toast.LENGTH_LONG).show()
-            }else{
-                Toast.makeText(applicationContext, "SELECT ATLEAST ONE", Toast.LENGTH_LONG).show()
             }
         }
 
