@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
         //On clicking submit button
         submit.setOnClickListener {
-            if(dbYes.isChecked && dbNo.isChecked && bpNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
+            if(dbYes.isChecked && bpNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
                 startActivity(dbIntent)
             }else if(bpYes.isChecked && dbNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
                 startActivity(bpIntent)
@@ -148,6 +148,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(c30Intent)
             }else if(dbNo.isChecked && bpNo.isChecked && thNo.isChecked && caNo.isChecked && msNo.isChecked){
                 Toast.makeText(applicationContext, "OOPS!! NO RECOMMENDATIONS FOR YOU", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(applicationContext, "SELECT AT LEAST ONE", Toast.LENGTH_LONG).show()
             }
         }
 
